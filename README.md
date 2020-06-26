@@ -1,2 +1,2 @@
-# anavimittal.github.io
-a work in progress
+# Hi, thanks for visiting
+This is currently a work in progress.
