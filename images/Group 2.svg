@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="119px" viewBox="0 0 138 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <rect id="Rectangle" fill="#C15C42" x="0" y="0" width="138" height="119" rx="6"></rect>
+            <g id="Group" transform="translate(19.000000, 23.000000)" fill="#FFFFFF">
+                <polygon id="Triangle" points="50 0 68 30 32 30"></polygon>
+                <polygon id="Triangle" points="18 42 36 72 0 72"></polygon>
+                <polygon id="Triangle" transform="translate(50.000000, 56.000000) rotate(-180.000000) translate(-50.000000, -56.000000) " points="50 41 68 71 32 71"></polygon>
+                <polygon id="N" fill-rule="nonzero" points="95 30 91.2120891 30 79.8282078 7.58241758 79.7677625 30 76 30 76 0 79.7879109 0 91.1717922 22.3763736 91.2322375 0 95 0"></polygon>
+                <polygon id="I" fill-rule="nonzero" points="76 41 95 41 95 44.3173077 87.4647727 44.3173077 87.4647727 67.7032967 95 67.7032967 95 71 76 71 76 67.7032967 83.3625 67.7032967 83.3625 44.3173077 76 44.3173077"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
