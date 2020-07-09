@@ -521,7 +521,15 @@
 
             }
 
-
+             .flex-container {
+                 display: flex;
+                 flex-wrap: nowrap; 
+                 overflow: auto;
+            }
+                .flex-item {
+                flex: 0 0 auto;
+            }
+            
         }
     </style>
 
@@ -569,6 +577,20 @@
             </div>
 
         </div>
+        
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div>
+<div>
+        <p>This is flex:</p>
+            <div class="container flex">
+            <div class="item flex-item">1</div>
+            <div class="item flex-item">2</div>
+            <div class="item flex-item">2</div>
+            <div class="item flex-item">3</div>
+            <div class="item flex-item">5</div>
+  </div>
+</div>
         
         
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
