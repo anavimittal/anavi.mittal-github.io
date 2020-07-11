@@ -21,7 +21,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <style>
-     body {
+        body {
             font-family: 'IBM Plex Sans', sans-serif;
         }
 
@@ -41,6 +41,7 @@
         h3 {
             font-size: 30px;
             font-weight: 500;
+            word-wrap: break-word;
 
 
         }
@@ -72,8 +73,7 @@
 
         p {
             font-size: 16px;
-
-
+            word-wrap: break-word;
 
         }
 
@@ -239,6 +239,8 @@
             border: solid black 1px;
             padding: 10px 25px;
             font-size: 14px;
+            position: absolute;
+            bottom:30px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -347,31 +349,26 @@
 
          /*------------------------------------------------------------*/
 
-  .cont {
-  padding-left: 1em;
+ .cont {
   width: 100%;
-  height: 400px;
+  height: 360px;
+  position: fixed; bottom:0px;
   white-space: nowrap;
 }
 
 .item {
-  border: 20px solid white;
-  border-radius: 22px;
+  border: none;
+  border-radius: 0;
+  padding: 20px;
   background-color: #f4def3;
   width: 30%;
-  min-width: 360px;
+  min-width: 300px;
 }
 
 .flex {
   display: flex;
   flex-wrap: nowrap; 
   overflow: auto;
-  
-  .element::-webkit-scrollbar { width: 0 !important }
-
- .element { overflow: -moz-scrollbars-none; }
-
- .element { -ms-overflow-style: none; }
   
 }
 .flex-item {
@@ -555,11 +552,6 @@
 
             }
 }
-        
-
-            
-       
-    
     </style>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -588,33 +580,80 @@
     </section>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-   <div class="container">
-
-        <div class="smspacer"></div>
-
-
-        <div class="row">
-            <div class="col-md-6">
-                <h1 id="aboutme">My Musings</h1>
-
-                <p class="textcomp">
+<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="aboutme">My Musings</h1>
+                    <p class="textcomp">
                     When I am feeling audacious, I pen a few lines and strokes. 
-                </p>
-
+                    </p>
+                </div>
+                <div class="smspacer"></div>
             </div>
+         </div>
+  
+        <div class="main">  
+            <div class="cont flex" style="">
+                <div class="item flex-item" style="background-color:#a8d5ea;">
+                    <div class="smspacer"></div>
+                    <h4>Technique Critique</h4>
+                    <h3>Packaging up 
+                        <br>Personas</h3>
+                    <p class="textcomp">Researched on improving payments 
+                        <br>for the visually impaired in India</p>
+                <a href="/blog/persona.html" class="button1">
+                View Article
+                </a>
+                <div class="smspacer"></div> 
+                </div>
 
-        </div>
-      
-        
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-       <div class="main">  
-            <div class="cont flex">
-                <div class="item flex-item">Packaging Personas</div>
-                <div class="item flex-item">Rooting in Handwriting</div>
-                <div class="item flex-item">Interacting in India</div>
-                <div class="item flex-item">Data knows Best</div>
-                <div class="item flex-item">Wilde's Vision on Fashion</div>
-                <div class="item flex-item">Familiarity</div>
+                
+                <div class="item flex-item" style="background-color:#e2d19e;">
+                    <div class="smspacer"></div>
+                <h4>Fair Warning</h4>
+                <h3>Data Knows Best</h3>
+                <p class="textcomp">Blah Blah Blah</p>
+
+                <a href="/blog/data.html" class="button1">
+                View Case Study
+                    </a>
+                 <div class="smspacer"></div>
+                </div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <div class="item flex-item" style="background-color:#c3db8c;">
+                    <div class="smspacer"></div>
+                <h4>An Ode</h4>
+                <h3>Wilde's Fashion 
+                    <br>Fed-Up</h3>
+                <p class="textcomp">"To those who never
+                    <br>rated, hated, and berated
+                    <br>each tryly bad new fad
+                    <br>that should have been cremated</p>
+
+                <a href="/blog/wilde.html" class="button1">
+                View Article
+                    </a>
+                <div class="smspacer"></div> 
+                </div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="item flex-item" style="background-color:#f2d596;">
+
+                <div class="smspacer"></div>
+                <h4>Contemplation</h4>
+                <h3>Techno-
+                    <br>Communities</h3>
+                <p class="textcomp">Redesigned and contructed </p>
+                    <a href="/blog/community.html" class="button1">
+                View Article
+                </a>
+                <div class="smspacer"></div>  
+                </div>
             </div>
         </div>
       
@@ -631,7 +670,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-    <div class="container">
+    <!--div class="container">
         <div class="iconbar">
 
             <ul>
@@ -641,7 +680,7 @@
                 <a href="https://medium.com/@anavi.mittal" target="_blank"><i class="fab fa-medium icon"></i></a>
                 <a href="https://www.behance.net/anavimittal" target="_blank"><i class="fab fa-behance icon"></i></a>
                 <a href="https:/www.linkedin.com/in/anavimittal/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
-                <!--a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble icon"></i></a-->
+                <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble icon"></i></a>
                 <a href="mailto:anavi.mittal.03@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
 
 
@@ -656,7 +695,7 @@
         </div>
         <p class="figcap">&#169; 2021. Designed by Anavi</p>
 
-    </div>
+    </div-->
 
 
 
