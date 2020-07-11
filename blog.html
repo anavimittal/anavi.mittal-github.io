@@ -5,7 +5,6 @@
     <title>Anavi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/@.png" sizes="32x32">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -240,8 +239,6 @@
             border: solid black 1px;
             padding: 10px 25px;
             font-size: 14px;
-            position: absolute;
-            bottom:30px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -348,34 +345,6 @@
             color: darkgrey;
         }
 
-         /*------------------------------------------------------------*/
-
- .cont {
-  width: 100%;
-  height: 360px;
-  position: fixed; bottom:50px;
-  white-space: nowrap;
-}
-
-.item {
-  border: none;
-  border-radius: 0;
-  padding: 20px;
-  background-color: #f4def3;
-  width: 30%;
-  min-width: 300px;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: nowrap; 
-  overflow: auto;
-  
-}
-.flex-item {
-  flex: 0 0 auto;
-}
-
 
 
 
@@ -443,7 +412,7 @@
 
 
 
-        @media screen and (min-width: 300px) {
+        @media screen and (max-width: 600px) {
             .content {
                 width: 90%;
                 margin: 0 auto;
@@ -486,6 +455,7 @@
 
             .container {
                 text-align: center!important;
+
             }
 
 
@@ -504,31 +474,14 @@
 
             }
 
-
+            .item{
+                padding-left: 30px;
+            }
 
         }
+
 
         @media screen and (min-width: 600px) {
-            .content {
-                width: 60%;
-                margin: 0 auto;
-                margin-top: 5em;
-                margin-bottom: 10em;
-            }
-
-
-            .container {
-                padding-right: 0em;
-                padding-left: 0em;
-
-            }
-
-
-
-
-        }
-
-        @media screen and (min-width: 1000px) {
             .content {
                 width: 45%;
                 margin: 0 auto;
@@ -548,10 +501,40 @@
 
                 border: #999999 solid 1px;
                 padding: 50px;
-
-
-
             }
+
+.cont {
+  width: 100%;
+  height: 360px;
+  position: fixed; bottom:50px;
+  white-space: nowrap;
+}
+
+.item {
+  border: none;
+  border-radius: 0;
+  padding: 20px;
+  background-color: #f4def3;
+  width: 30%;
+  min-width: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow: auto;
+  
+}
+.flex-item {
+  flex: 0 0 auto;
+}
+
+a.button1 {
+            
+            position: absolute;
+            bottom: 50px;
+
+            
 }
     </style>
 
@@ -567,6 +550,7 @@
     <section class="bgcolor">
         <div class="navigation">
             <div class="container">
+                <div class="smspacer"></div>
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#blog" class="active">Blog</a></li>
