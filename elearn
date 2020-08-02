@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Anavi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "icon" type= "image.jpg" href= "/images/@.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/auy7uxg.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+
+
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 80%;
+            height: 80%;
+        }
+
+
+        .gifsize1 {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        . .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+        .toppadding {
+            padding-top: 8em;
+        }
+
+
+
+
+        /*-------- NEXT BUTTOM --------*/
+
+        a {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+        a:hover {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <span class="col-md-9">
+
+                <div class="smspacer"></div>
+
+                <!--a href="index.html">
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Projects</span></p>
+            </a-->
+
+            <div class="smspacer"></div>
+            <h1 class="huge">Group Food Ordering</h1>
+            <div class="smspacer"></div>
+            </span>
+        </div>
+    </div>
+
+
+    <span class="col-md-12"> 
+            <figure>
+                <img src="/images/foodie/top.png" class="imagesize">
+                <div class="smspacer"></div>
+                <figcaption class="figcap"><strong>Disclaimer:</strong> I am not an employee of Swiggy and this does not represent the official strategic direction of Swiggy.</figcaption>
+            </figure>
+                    
+              </span>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <span class="col-md-9">    
+            <div class="smspacer"></div>
+            <div class="important">
+                <h4>Project Scope:</h4>
+                <ul>
+                    <li><strong>My Role: </strong>User Research, System Thinking, Wireframes</li>
+                    <li><strong>User Base: </strong>Teachers</li>
+                    <li><strong>Tools:</strong> Sketch, Pen and Paper</li>
+                    <li><strong>Timeline:</strong> 30 July- 2 August 2020 (4 days)</li>
+                    <!--li><strong>Deliverables:</strong> Research, User Flow, Wireframes, Hypothesis</li-->
+                    <li><strong>Team:</strong> Me, myself and I</li>
+                </ul>
+            </div>
+            <div class="lgspacer"></div>
+
+
+
+                    <h1>The Problem </h1>
+                    <p>With the newfound need for learning online, teachers and students are adapting to the tools at hand. Teaching online comes with its separate set of issues and schools have recently faced the need to re-skill their education staff.</p>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+            
+                <div class="smspacer"></div>
+                <!--a data-fancybox="gallery" href="images/foodie/flow1.png"><img src="images/foodie/flow1.png" class="imagesize"></a-->
+                
+                
+                
+                <div class="lgspacer"></div>
+                
+                    <h1>The Solution </h1>
+                    <p>A Learning System at hand that helps in taking an overview of the classes, and provides teachers methods to compensate for real- time insights.</p>
+
+                
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+
+            <div class="lgspacer"></div>
+          
+
+                <h1>Forming a Hypothesis </h1>
+                <p>I believe there is a massive disconnect between teachers and students, and also amongst teachers themselves. </p>
+
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+
+                
+                <h2>User Interviews </h2>
+                <p>I felt that it was time to interview teachers, students and parents to understand use cases and implications. During the interviews, I asked questions like-
+                <ul><i>
+                <li>“How do you track the presence and engagement of students?”</li>
+                    <li>“What are the teaching methods you utilise to get your points across?” </li>
+                    <li>“How do you manage and give feedback on assignments of students?”</li>
+                    <li>“How active are your classes with extracurricular side projects?”</li>
+                    <li>“Do you encourage group activities?”</li>
+                    <li>“Do the students listen to you?”</li>
+                </i></ul></p>
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+
+            <div class="smspacer"></div>
+                <div class="important">
+                <h4>User Quotes:</h4>
+
+                <div class="quote">“I hardly, if ever, get my money back. It's a lot of responsibility with few returns. I always mess up!”</div>
+
+                <div class="quote">“I wish I didn't have to pass my phone around as a chalkboard for everyone to ponder on the menu.”</div>
+            </div>
+
+            <div class="lgspacer"></div>
+                
+                  
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--h2>Google Survey</h2>
+                <p></p>
+                <div class="smspacer"></div>
+                <div class="important">
+                
+                <div class="quote">“”</div>
+                </div> <div class="smspacer"></div>
+                <p></p>
+
+               
+            <div class="lgspacer"></div-->
+                
+                  
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                
+                <div class="important">
+                <h2>Key Insights</h2>
+                    <div class="smspacer"></div>
+                <ul>
+                    <li>The device is often passed around to share the menu until one person opens the restaurant menu on their phone.</li>
+                    <li>Schools are holding online classes as long as 6 hours straight.</li>
+                    <li>A major part of these classes is wasted in reading textbooks, following the same sage-on-stage method as before.</li>
+                    <li>It is hard for students to focus clearly on the lesson.</li>
+                    <li>Whatsapp has formed a major tool for discussions, assignments, feedback and what not.</li>
+                    <li>The ability to cheat during examinations has become the new norm, with students uploading videos on Youtube of them cheating with live camera on</li>
+                </ul>
+            </div>
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+                
+                <div class="lgspacer"></div>
+                
+                <h1>The Opportunity </h1>
+   
+               <p>Based on my research, I feel confident that there is a recognizable amount of gap that needs to be mended for conscious teaching. Teachers are now expected to be more creative, interesting even, and judicious with the time.</p> 
+                
+                <div class="smspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                
+                <h2>Design Goals</h2>
+                <div class="smspacer"></div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <h4>Simple Navigation</h4>
+
+                        <p>Help users feel confident that they can place there orders without hassle.</p>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Flexible Scenarios</h4>
+
+                        <p>Instead of a single scenario, the user flow should be customizable for a get- together as well as a corporate lunch hosted by the HR.</p>
+
+
+                    </div>
+                </div>
+                
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+               
+             <div class="smspacer"></div>
+                
+                <h2>Mind Mapping</h2>
+                
+                <p>For quick projects, it is important to have a mind map because it allows me to lay down possibilities and considerations while understanding a problem statement. This helps me to refer back to the thoughts I had during secondary research.</p>
+                
+                
+                  <div class="smspacer"></div>
+
+
+            <a data-fancybox="gallery" href="images/elearn/mindmap.png"><img src="images/elearn/mindmap.png" class="imagesize"></a>
+
+
+            <div class="lgspacer"></div>
+        
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+               
+                <h2>Persona Spectrums</h2>
+                <p>For me, it is important to list characteristics of a persona because it allows me to bring the target user on the journey of designing a solution. This way, I can be sure that I am not stereotyping a teacher. This might look like a job description, but it helped me build a picture of what is on their minds.
+              <ol>
+                 <li>Role- Creating content, delivering it, initiating discussions, mentoring, holding tests</li>
+                 <li>Deliverables- Attendance, lesson plans, assignments, feedback, grades</li>
+                 <li>Expectations- Keeping updated, finishing syllabus, maintaining order in class, empathy</li>
+              </p>
+                             
+                <div class="lgspacer"></div>
+
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+             
+        
+                
+            <h1>Exploring Ideas</h1>
+            <p>After understanding the users & problems deeper, I wrote down areas to focus on to help me think of different ways that could help teachers. I also went through multiple revisions of different "How Might We" questions to help me have a clear understanding of the problem I was solving.</p>
+                <div class="smspacer"></div>
+                
+                <div class="important">
+                <h4>HMW Question:</h4>
+                <h2>How might we ensure that the teachers are able to engage with the students better?</h2>
+                </div>
+                    <div class="lgspacer"></div>
+
+                    <a data-fancybox="gallery" href="images/foodie/ideation2.png"><img src="images/foodie/ideation2.png" class="imagesize"></a>
+
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                
+
+            <div class="lgspacer"></div>
+            
+             <h2>Things to Consider</h2>
+                <p>To get out of the quick ideation mindset I write down 'Things to consider.' When I break the idea down and question its value, I can often find small issues that need to be addressed. Here are a few of those thoughts.</p>
+
+            <ul>
+                <li>What is the current and correct method of engaging students?</li>
+                <li>How can assignments become more exciting for students and teachers, rather than a chore?</li>
+                <li>Is there a way for teachers to mark assignments promptly and effectively?</li>
+            </ul>
+                
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                
+                
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 01</h4>
+                <h2>Building a dashboard about the engagement statistics of all direct students.</h2>
+                </div>
+                <div class="smspacer"></div>
+                <p>Continuing on the former idea, the teacher should have informed insights of their students’ interest and performance. If something is found lacking, a problem identification meeting can be organised with parents and the counselor. This might also allow for teachers to track the journey of students with varied learning needs, and to allow tracking of attendance.</p>
+                <div class="lgspacer"></div>
+                
+                
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 02</h4>
+                <h2>Curated database of techniques to explain/ demonstrate various topics.</h2>
+                </div>
+                <div class="smspacer"></div>
+                <p>As a teacher, it would help if I could check how a concept is taught by the best instructors. With better teaching methods, time will not be wasted online on incomprehensive reading from textbooks. This can be replaced with intentional doubt- reducing sessions or quick quizzes once the kids are done reading the lesson once by themselves. Not only will this help us talk about what really matters in a classroom, it will help reduce our screen-times.</p>
+                <div class="lgspacer"></div>
+                
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 02</h4>
+                <h2>Empower teachers to be able to receive assignments and give feedback better.</h2>
+                </div>
+                <div class="smspacer"></div>
+                <ul>
+                <li>Are teachers able to point out exactly where the problem exists in an assignment?</li>
+                <li>What is their preferred method of receiving assignments?</li>
+                <li>What is the set of tools they are using to communicate with students, parents and peers?</li>
+                </ul>
+                <p>Whatsapp is being largely used to form groups of students with subject teachers and share assignment requirements. The PDFs with answers are shared over individual chat for discretion. The lack of grouping chats in Whatsapp by purpose can make this experience quite chaotic. The teachers don’t have the time or the patience to compile the work and check, and they miss out on annotating every answer script.</p>
+                <div class="lgspacer"></div>
+                
+                
+                
+
+                 <div class="lgspacer"></div>
+                
+ 
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+                
+
+            <div class="lgspacer"></div>
+            <h2>Sketching & Wireframing</h2>
+            <p>During sketching, I was able to explore potential layouts and user flows for introducing the group order functionality. I determined that there should be two user flows in this feature, for the host and for the invitee- with some restrictions.</p>
+            <div class="smspacer"></div>
+
+
+            <a data-fancybox="gallery" href="images/foodie/wireframes.png"><img src="images/foodie/wireframes.png" class="imagesize"></a>
+
+            <div class="lgspacer"></div>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+            <h1>Testing & Iterating </h1>
+
+            <div class="smspacer"></div>
+            
+            <p>Once I explored different ideas, I wanted to test this idea with interviewed teachers. I did some qualitative testing with a few screens to test some variations. I then mocked up screens in Sketch to build my prototype in XD. </p>
+            
+            <div class="smspacer"></div>
+            
+            <a data-fancybox="gallery" href="images/foodie/wire1.png"><img src="images/foodie/wire1.png" class="imagesize"></a>
+            <figcaption class="figcap">Wireframes for the host's view aside from the unchanged screens.</figcaption>
+            
+            <div class="lgspacer"></div>
+
+            <div class="important">
+                <h4>Research Findings:</h4>
+                <ul>
+                    <li>Teachers felt creating and annotating assignments can be best accomplished with desktop and a mouse.</li>
+                    <li>Teachers feel that it is the instant manner of receiving a whatsapp assignment that makes it valuable for tests, and also because of the wide acceptance of the app.</li>
+                    <li>Some teachers were not appreciative of being recorded, and would like to have them deleted from the database, whereas some suggested these could be shared with the underprivileged.</li>
+                </ul>
+            </div>
+
+            <div class="lgspacer"></div-->
+              
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                    
+            <div class="row">       
+                    
+                <span class="col-md-6">
+                
+            <h4>Usability Issue :</h4>
+
+            <p>
+                The main usability issue that I found was that students will have issues ordering in advance, and there will be delays in individual payments.</strong> </p>
+                
+                </span>
+            <span class="col-md-6">
+                
+            <h4>Design Decision:</h4>
+            <p>To help with singular payments and easy money splitting, Swiggy payments could be done directly with Swiggy money for instant payments. If an invitee is perchance not a user of Swiggy, the Swiggy amount could be requested via Google Pay or Splitwise. This would allow the users to manage the payment post get-together as well.</p>
+                </span>
+
+        </div>
+
+        <div class="lgspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        
+         <p>After making some changes to the design based on testing, I presented my prototypes to Swiggy users and got the following responses:</p>
+
+
+        <div class="smspacer"></div>
+
+
+        <div class="important">
+            <h4>User Quotes:</h4>
+
+            <div class="quote">“This looks fun, but I wonder if this will suit all types of guests. With some of my friends, it will delay the order.”</div>
+
+            <div class="quote">“If we can plan these types of parties, it will be great to have add-ons for napkins and cutlery too!”</div>
+        </div>
+
+        <div class="lgspacer"></div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <h1>Revisiting the Host's User Flow</h1>
+        <div class="smspacer"></div>
+
+             <h2>User Journey Map</h2>
+                
+                <p>Laying out the user journey map <strong>enables me to see the big picture.</strong> As I build a journey map, I like to focus on potential opportunities.</p>
+                
+                <div class="smspacer"></div>
+
+            <a data-fancybox="gallery" href="images/foodie/flow2.png"><img src="images/foodie/flow2.png" class="imagesize"></a>
+
+            <div class="smspacer"></div>
+        <div class="lgspacer"></div>                                       
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+                
+        <p>This solution will give the user the flexibility to organise the menu in advance with the help of users, manage payments, and have extra paid add-ons with the menu.</p>
+        
+        <div class="lgspacer"></div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <div class="row">
+
+            <span class="col-md-6">
+             <p class="toppadding">She selects a restaurant after much ado and sees that there are promotional offers on group order. She browses the menu and proceeds for group order.</p>
+                
+            </span>
+
+
+
+            <span class="col-md-6">
+                 <div class="row justify-content-center">
+            <img src="images/foodie/scr2.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+            </span>
+
+        </div>
+
+        <div class="lgspacer"></div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <div class="row">
+
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="images/foodie/scr3.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+            
+             <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="images/foodie/scr5.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+
+
+
+            <span class="col-md-4">
+                 <p class="toppadding">She makes changes to the order according to her requirements. She decides to pay for the farewell herself and get it reimbursed. She sets an order limit per person to help manage the budget.</p>
+            </span>
+
+        </div>
+    
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="smspacer"></div>
+        <div class="important">
+            <h2>Next Steps & Considerations:</h2>
+            <ul>
+                <li>How will the Swiggy link with Splitwise work?</li>
+            </ul>
+
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="lgspacer"></div>
+        <!--h1>My Successes </h1>
+
+        <p>After writing up the case study, I sent my work over to a designer at Swiggy and this is the reply I received:</p>
+
+
+        <div class="smspacer"></div>
+
+        <a data-fancybox="gallery" href="images/foodie/.png"><img src="images/foodie/.png" class="imagesize"></a-->
+
+
+        <div class="smspacer"></div>
+            <h4>Conclusion:</h4>
+            <p>While serving customers, food apps could build solutions for businesses as well.</p>
+
+        </span>
+    </div>
+    </div>
+  
+    
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="lgspacer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+</body>
+
+<footer>
+  
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="iconbar">
+
+            <ul>
+                <!--a href="https://medium.com/@anavi.mittal" target="_blank"><i class="fab fa-medium icon"></i></a-->
+                <a href="https://www.behance.net/anavimittal" target="_blank"><i class="fab fa-behance icon"></i></a>
+                <a href="https://www.linkedin.com/in/anavimittal" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                <!--a href="https://dribbble.com/anavi" target="_blank"><i class="fab fa-dribbble icon"></i></a-->
+                <a href="mailto:anavi.mittal.03@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
+            </ul>
+
+
+            <div class="smspacer"></div>
+
+
+        </div>
+        <p class="figcap">&#169; 2020. Developed & Designed by Anavi</p>
+
+    </div>
+
+
+
+
+</footer>
+
+</html>
