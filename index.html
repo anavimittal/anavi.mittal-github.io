@@ -540,19 +540,7 @@
 
     </style>
 
-    <script>
-var i = 0;
-var txt = 'Product Designer';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("name").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
+    
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
@@ -595,14 +583,27 @@ function typeWriter() {
                 <span class="col-md-8 down"> 
                     
             <h4>Hi, I'm Anavi</h4>
-<div class= "typing">
+
             <h1 class="huge">Product Designer </h1>
     <h1 id="name"></h1>
+                    <script>
+var i = 0;
+var txt = 'Product Designer';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("name").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
                     
         <!--h1>I'm a<span class="typed"></span></h1>
         <p>Product designer, Illustrator, Voracious Reader</p-->
 
-                    </div>
+                 
 
             
             
