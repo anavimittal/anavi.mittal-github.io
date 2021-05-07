@@ -263,6 +263,26 @@
                 margin-bottom: 10em;
             }
         }
+        
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: solid black 1px;
+  outline: none;
+  background-color: White;
+  color: solid black;
+  cursor: pointer;
+  padding: 3px 10px  3px 10px;
+  border-radius: 40px;
+}
+
+#myBtn:hover {
+  background-color: black;
+  color: white;
     </style>
 </head>
     
@@ -520,7 +540,32 @@
             <p>The project won accolades for the Best and the Most Innovative Graduation Project at NIFT Delhi Graduation Exhibit 2019.</p>
             
         </div>
+    
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" style="font-size:16px"></i></button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->        
 
         </span>
