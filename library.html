@@ -82,6 +82,7 @@
         
         p {
             font-size: 16px;
+             
         }
 
 
@@ -235,26 +236,21 @@
             font-weight: 300;
         }
       
-      .card{
-        border: solidblack 1px;
+      .img-fluid{     
         border-radius: 16px;
-        text-decoration: none;
-        color: inherit;
-        opacity: 0.9;
         overflow:hidden;
-        
-        
+           
         
       }
       
-      .card:hover{
+      .img-fluid:hover{
         border: #9c9c9c 1px;
         border-radius: 16px;
         text-decoration: none;
         color: inherit;
         opacity: 1;
   overflow:hidden;
-        box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;}
+        }
         
         
       }
@@ -575,49 +571,14 @@
         }
         
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid DodgerBlue; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 10 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-  
-}
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: DodgerBlue }
-}
-
-/* The scroll back button*/
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 99;
-  font-size: 16px;
-  border: solid black 1px;
-  outline: none;
-  background-color: White;
-  color: solid black;
-  cursor: pointer;
-  padding: 3px 10px  3px 10px;
-  border-radius: 40px;
-}
 
 #myBtn:hover {
   background-color: black;
-  color: white;
+  color: white;}
+
+      
   
     </style>
     
@@ -638,7 +599,7 @@
                 <ul>
 
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#" class="active">Blog</a></li-->
+                    <li><a href="#" class="active">Library</a></li-->
                     <li><a href="index.html">Projects</a></li>
 
                 </ul>
@@ -662,32 +623,22 @@
         <div class="smspacer"></div>
         <div class="row">
             <div class="col-md-9">
-                <h1 id="aboutme">About Me</h1>
+                <h1 id="aboutme">Library</h1>
 <div class="smspacer"></div>
 
                 <p class="textcomp">
                     
                     <strong>
-                    Anavi
-                    <br>
-                    Pronunciation: (aan-avi)
-                    <br>
-                    Meaning: Humane, Pure Origin: Sanskrit
+                   Let's discuss books and readables!
+                    
                     </strong>
-
+             
                     <br><br>
-                    I have been working as a UX Designer at <strong>CARS24</strong> since completing my Bachelors of Design from <strong>NIFT New Delhi</strong> in June 2019. 
+                    If you have a recommendation for me, or want to discuss, I would love to hear from you!
+                <br><br>  
+                 I obsessively track my book reading in this <a href="https://airtable.com/invite/l?inviteId=invkI7A95ghU2NcWL&inviteToken=e7f97ca325471198f1fdf9ec1cd87090bf97c4408d91e12490acd6e9a47d297c" target="_blank">Airtable.</a> Most recently, my favorite read was Maus by Art Spiegelman.
                   
-                  <br><br>
-                 Previously, I have interned at companies like Paytm, Ogilvy, Tupperware, and Times of India for UX Research, Advertising, Graphics, and Journalism.
-
-                    
-                    
-                    <br><br>
-                    When I am not reading or moving pixels, you can find me playing chess or flute. I can't speak much for those, but I have gotten better at creating edibles during the lockdown. 
-
-                    <br><br>
-                    When I am feeling audaciously articulate, I pen down or sketch a few lines.
+                
 
                     <!--strong>I am looking for future opportunities to <span class="ec ec-chart-with-upwards-trend"></span> grow.</strong-->
                 </p>
@@ -697,35 +648,29 @@
 
             </div>
     </div>
+
   
 <div class="lgspacer"></div>
 
-
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  <div class= "container">
+  <div class= "row">
+    <div class="col-md-3">
+         <img src=https://images.unsplash.com/photo-1518176258769-f227c798150e class= "img-fluid"><p>The bOok of </p>   
+    </div>
+        
+    <div class="col-md-3">
+         <img src=https://images.unsplash.com/photo-1518176258769-f227c798150e class= "img-fluid">
+      
+    </div>
+    </div></div>
+  
+  <div class="lgspacer"></div>
+  
+  
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" style="font-size:16px"></i></button>
-
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
 
 
 
@@ -737,6 +682,7 @@ function topFunction() {
     
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
 
 
 
