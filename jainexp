@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Anavi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/@.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/auy7uxg.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #c94a4d;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+
+        h4 {
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 80%;
+            height: 80%;
+        }
+
+
+        .gifsize1 {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        . .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #333333;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #191919;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #212121;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+        .toppadding {
+            padding-top: 8em;
+        }
+
+
+
+
+        /*-------- NEXT BUTTOM --------*/
+
+        a {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+        a:hover {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body style="background-color: #c94a4d">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <span class="col-md-9">
+
+                <div class="smspacer"></div>
+
+                <a href="index.html">
+                    
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" style="color:black" aria-hidden="true"></i> <span style="color:black">Back to Projects</span></p>
+            
+                </a>
+
+            <div class="smspacer"></div>
+            <h1 class="huge">Jain Cosmnology</h1>
+            <div class="smspacer"></div>
+            </span>
+
+
+        </div>
+    </div>
+
+
+   
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <span class="col-md-9">    
+            <div class="smspacer"></div>
+           
+                    <p style="color:black">The universe is an uncreated entity that has existed since infinity with neither begin nor end. Time is cyclical.</p>
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="lgspacer"></div>       
+<div class="lgspacer"></div>
+        <div class="container col-lg-9">
+         <div class="row">
+            <div class="col-3">
+                  <a data-fancybox="gallery" href="/images/jain/Group 17.png"><img src="/images/jain/Group 17.png" class="imagesize"></a> <div class="smspacer"></div>
+                
+                  <a data-fancybox="gallery" href="/images/jain/Group 18.png"><img src="/images/jain/Group 18.png" class="imagesize"></a> <div class="smspacer"></div>
+                
+                  <a data-fancybox="gallery" href="/images/jain/Group 19.png"><img src="/images/jain/Group 19.png" class="imagesize"></a> <div class="smspacer"></div>
+                                              
+             </div>
+            
+             <div class="col-3">
+                  <a data-fancybox="gallery" href="/images/jain/Group 20.png"><img src="/images/jain/Group 20.png" class="imagesize"></a> <div class="smspacer"></div>
+
+                  <a data-fancybox="gallery" href="/images/jain/Group 25.png"><img src="/images/jain/Group 25.png" class="imagesize"></a> <div class="smspacer"></div>
+                
+                  <a data-fancybox="gallery" href="/images/jain/Group 21.png"><img src="/images/jain/Group 21.png" class="imagesize"></a> <div class="smspacer"></div>
+                  
+            </div>
+            
+            <div class="col-3">
+                   <a data-fancybox="gallery" href="/images/jain/Group 22.png"><img src="/images/jain/Group 22.png" class="imagesize"></a> <div class="smspacer"></div>
+                  
+                  <a data-fancybox="gallery" href="/images/jain/Group 23.png"><img src="/images/jain/Group 23.png" class="imagesize"></a> <div class="smspacer"></div>
+                  
+                  <a data-fancybox="gallery" href="/images/jain/Group 24.png"><img src="/images/jain/Group 24.png" class="imagesize"></a> <div class="smspacer"></div>                  
+           
+            </div>
+        </div>
+
+                <div class="smspacer"></div>
+                
+                
+                <img src="/images/jain/jainism. gif">
+               
+                  
+                    <div class="lgspacer"></div>
+                
+
+
+        </span>
+    </div>
+    </div>
+
+    <a href="patanjali.html">
+        <div class="row">
+
+            <div class="importantclick col-md-12">
+                <p style="color:white">Next Project</p>
+                <h1 style="color:white">Patanjali Identity</h1>
+            </div>
+
+
+        </div>
+
+    </a>
+
+
+
+    <div class="lgspacer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+
+</body>
+<footer>
+
+    
+    
+    <div class="container">
+        <div class="iconbar">
+
+            <ul>
+
+                <!--a href="https://medium.com/@anavi.mittal" target="_blank"><i class="fab fa-medium icon"></i></a-->
+                <a href="https://www.behance.net/anavimittal" target="_blank"><i class="fab fa-behance icon"></i></a>
+                <a href="https://www.linkedin.com/in/anavimittal" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                <!--a href="https://dribbble.com/anavi" target="_blank"><i class="fab fa-dribbble icon"></i></a-->
+                <a href="mailto:anavi.mittal.03@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
+
+            </ul>
+
+
+            <div class="smspacer"></div>
+
+
+        </div>
+        <p class="figcap">&#169; 2021. Created with &#10084;&#65039 by Anavi</p>
+    </div>
+
+
+
+
+</footer>
+
+</html>
