@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Anavi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "icon" type= "image.jpg" href= "/images/@.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/auy7uxg.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172405324-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-172405324-1');
+    </script>
+    
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 80%;
+            height: 80%;
+        }
+
+
+        .gifsize1 {
+            width: 50%;
+            height: 50%;
+        }
+
+
+        . .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 14px;
+            margin: 2em;
+            font-weight: 400;
+            background: ;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+        .toppadding {
+            padding-top: 8em;
+        }
+
+
+
+
+        /*-------- NEXT BUTTOM --------*/
+
+        a {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+        a:hover {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+        a.button1 {
+            border: solid black 1px;
+            padding: 10px 25px;
+            width: 200px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color .5s;
+            color: inherit;
+
+
+        }
+
+        a.button1:visited {
+            color: black;
+
+        }
+
+
+        a.button1:hover {
+
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+
+
+
+        }
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+        
+        
+       #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: solid black 1px;
+  outline: none;
+  background-color: White;
+  color: solid black;
+  cursor: pointer;
+  padding: 3px 10px  3px 10px;
+  border-radius: 40px;
+}
+
+#myBtn:hover {
+  background-color: black;
+  color: white;
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <span class="col-md-9">
+
+                <div class="smspacer"></div>
+                <a href="index.html">
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Projects</span></p>
+</a>
+            <div class="smspacer"></div>
+<h1 class="huge">E-Teaching Efficiently</h1>
+            <div class="smspacer"></div>
+            </span>
+        </div>
+    </div>
+
+
+    <span class="col-md-12">
+            <figure>
+                <img src="/images/elearn/top.png" class="imagesize">
+                <div class="smspacer"></div>
+            </figure>
+                    
+              </span>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <span class="col-md-9">    
+            <div class="smspacer"></div>
+            <div class="important">
+                <h4>Project Scope:</h4>
+                <ul>
+                    <li><strong>My Role: </strong>User Research, System Thinking, Wireframes</li>
+                    <li><strong>User Base: </strong>School Teachers</li>
+                    <li><strong>Tools:</strong> Sketch, Pen and Paper</li>
+                    <li><strong>Timeline:</strong> 30 July- 2 August 2020 (4 days)</li>
+                    <!--li><strong>Deliverables:</strong> Research, User Flow, Wireframes, Hypothesis</li-->
+                    <li><strong>Team:</strong> Me, myself and I</li>
+                </ul>
+            </div>
+            <div class="lgspacer"></div>
+
+
+
+                    <h1>The Problem </h1>
+                    <p>With the newfound need for learning online, teachers and students are adapting to the tools at hand. Schools are re-skilling their education staff.</p>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+            
+                <div class="smspacer"></div>
+                <!--a data-fancybox="gallery" href="images/foodie/flow1.png"><img src="images/foodie/flow1.png" class="imagesize"></a-->
+                
+                
+                    <h1>The Solution </h1>
+                    <p>A Learning System that will help teachers with an overview of the classes and real-time insights.</p>
+
+                
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+
+            <div class="smspacer"></div>
+          
+
+                <h2>Forming a Hypothesis </h2>
+                <p>I believe there is a massive disconnect between teachers and students, and also amongst teachers themselves. </p>
+                
+                <div class="smspacer"></div>
+            
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+
+                
+                <h2>User Interviews </h2>
+                <p>It was time to interview teachers, students and parents to understand use cases and implications.
+                <ul><i>
+                    <li>“How do you track the presence and engagement of students?”</li>
+                    <li>“What are the teaching methods you use to get your points across?” </li>
+                    <li>“How do you manage to give feedback on assignments?”</li>
+                    <li>“How active are your classes with extracurricular side projects?”</li>
+                    <li>“Do you encourage group activities?”</li>
+                    <li>“Do the students listen to you?”</li>
+                </i></ul></p>
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+
+            <!--div class="smspacer"></div>
+                <div class="important">
+                <h4>User Quotes:</h4>
+                <div class="quote">“I hardly, if ever, get my money back. It's a lot of responsibility with few returns. I always mess up!”</div>
+                <div class="quote">“I wish I didn't have to pass my phone around as a chalkboard for everyone to ponder on the menu.”</div>
+            </div>
+            <div class="lgspacer"></div-->
+                
+                  
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--h2>Google Survey</h2>
+                <p></p>
+                <div class="smspacer"></div>
+                <div class="important">
+                
+                <div class="quote">“”</div>
+                </div> <div class="smspacer"></div>
+                <p></p>
+               
+            <div class="lgspacer"></div-->
+                
+                  
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                
+                <div class="important">
+                <h2>Key Insights</h2>
+                    <div class="smspacer"></div>
+                <ul>
+                    <li>Schools are holding online classes as long as 6 hours straight.</li>
+                    <li>A large portion of time gets used up in reading textbooks, following the same sage-on-stage method as before.</li>
+                    <li>It is hard for students to focus clearly on the lesson.</li>
+                    <li>Whatsapp is the primary tool for discussions, assignments and feedback.</li>
+                    <li>The ability to cheat during examinations has become the new norm, sometimes with dear ones assisting.</li>
+                </ul>
+            </div>
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+                
+                <div class="lgspacer"></div>
+                
+                <h1>The Opportunity </h1>
+   
+               <p>There is a gap that needs to be mended for conscious teaching.</p> 
+                
+                <div class="smspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                
+                <h2>Design Goals</h2>
+                <div class="smspacer"></div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Sharing Insights</h4>
+                        <p>Help teachers get an overview of attendance by the net time any student attends their classes.</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Ease of Use</h4>
+                        <p>The solution should be seamless and easy to use.</p>
+                    </div>
+                </div>
+                
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+               
+             <div class="smspacer"></div>
+                
+                <h2>Mind Mapping</h2>
+                
+                <p>For quick projects, I always lay out a mind map because it allows me to lay down possibilities and considerations while understanding a problem statement. </p>
+                
+                
+                  <div class="smspacer"></div>
+
+
+            <a data-fancybox="gallery" href="images/elearn/mindmap.png"><img src="images/elearn/mindmap.png" class="imagesize"></a>
+
+
+            <div class="lgspacer"></div>
+        
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+               
+                <h2>Persona Spectrums</h2>
+                <p>For me, it is important to list the characteristics of a persona because it allows me to bring the target user on the journey of designing a solution.
+              <!--ol>
+                 <li>Role- Creating content, delivering it, initiating discussions, mentoring, holding tests</li>
+                 <li>Deliverables- Attendance, lesson plans, assignments, feedback, grades</li>
+                 <li>Expectations- Keeping updated, finishing syllabus, maintaining order in class, empathy</li>
+            </ol-->
+                 <div class="row">
+                    <div class="col-md-4">
+                        <div class="important">
+                        <h4>Roles</h4>
+                        <ol>
+                            <li>Creating content</li>
+                            <li>Delivering it</li>
+                            <li>Testing Retention</li>
+                            <li>Mentoring</li>
+                            </ol></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="important">
+                        <h4>Deliverables</h4>
+                        <ol>
+                            <li>Attendance</li>
+                            <li>Lesson Plans</li>
+                            <li>Assignments</li>
+                            <li>Grades</li>
+                            </ol></div>
+                    </div>
+                     
+                     <div class="col-md-4">
+                        <div class="important"> 
+                        <h4>Expectations</h4>
+                        <ol>
+                            <li>Keeping updated</li>
+                            <li>Finishing syllabus</li>
+                            <li>Disciplining</li>
+                            <li>Empathy</li>
+                        </ol></div>
+                    </div>
+                </div>   
+              </p>
+                             
+                <div class="lgspacer"></div>
+
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+             
+        
+                
+            <h1>Exploring Ideas</h1>
+            <p>After understanding the users & problems deeper, I wrote down areas to focus on to help me think of different ways that could help teachers. I also went through multiple revisions of different "How Might We" questions to help me have a clear understanding of the problem I was solving.</p>
+                <div class="smspacer"></div>
+                
+                <div class="important">
+                <h4>HMW Question:</h4>
+                <h2>How might we ensure that the teachers can engage with the students?</h2>
+                </div>
+                    <div class="lgspacer"></div>
+
+                    <a data-fancybox="gallery" href="/images/elearn/ideation.png"><img src="/images/elearn/ideation.png" class="imagesize"></a>
+
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                
+
+            <div class="lgspacer"></div>
+            
+             <h2>Things to Consider</h2>
+                <p>To get out of the quick ideation mindset I write down 'Things to consider.' When I break the idea down and question its value, I can often find small issues that need to be addressed. Here are a few of those thoughts.</p>
+        <div class="important">
+            <ul>
+                <li>What is the current and correct method of engaging students?</li>
+                <li>How can assignments become more exciting for students and teachers, rather than a chore?</li>
+                <li>Is there a way for teachers to mark assignments promptly and effectively?</li>
+            </ul>
+        </div>             
+<div class="lgspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                
+                
+                
+                <div class="important">
+                <h4>Idea 01</h4>
+                <h2>Incorporating the engagement statistics of all direct students.</h2>
+                <div class="quote">“Teacher has appointed students to check attendance at the beginning at the end, or they call us out and check if we are aware. If someone drops out in the meantime, the teacher can't do much.” -Shimon Singhal, student (VIII grade), DPS Rewari</div>
+                </div>
+                <div class="smspacer"></div>
+                <p>The teacher should have informed insights into their students’ interest and performance. If something is found lacking, a problem identification meeting can be organised with parents and the counsellor. Not only will this allow for teachers to track the students with varied needs, but also <strong>the tracking of attendance</strong>, which is a pain to track manually.</p>
+                <div class="lgspacer"></div>
+                
+                
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 02</h4>
+                <h2>A curated database of techniques to explain/ demonstrate various topics.</h2>
+                <div class="quote">“School administrations are realizing that finishing school syllabus can't be their solitary goal. Students need to be aware of the topics taught to them and should be able to discuss them in conversations. You can't ask them straightforward questions in examinations." -Ravindra Yatagiri, VP E-learning, UPES</div>
+                </div>
+                <div class="smspacer"></div>
+                <p>Effort & time is required for browsing through tons of reference books to find relevant and innovative teaching methods. As a teacher, it would help if I could check how a concept is <strong>taught by the best instructors</strong>. With better teaching methods, time will not be wasted online on incomprehensive reading from textbooks. This can be replaced with intentional doubt- reducing sessions or quick quizzes once the kids are done reading the lesson once by themselves. Not only will this help us talk about what matters in a classroom but it will also help reduce our screen times.</p>
+                <div class="lgspacer"></div>
+                
+               
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 03</h4>
+                <h2>Empower teachers to be able to receive assignments and give feedback better.</h2>
+                <div class="quote">“See, checking assignments is a huge challenge for me. I can either print out the assignment they send, mark them, click a picture, and send it back. Or I can mark it right in the PDF. Schools should provide graphic tablets for the required annotation, and few are. Most of the teachers are making do with giving feedback separately if they can.”- Neera Kapoor, teacher, Welhams' Girls</div>
+                </div>
+                <div class="smspacer"></div>
+                <ul>
+                <li>Are teachers able to point out exactly where the problem exists in an assignment?</li>
+                <li>What is their preferred method of receiving assignments?</li>
+                <li>What is the set of tools they are using to communicate with students, parents and peers?</li>
+                </ul>
+                <p>Whatsapp is being largely used to form groups of students with subject teachers and share assignment requirements. The PDFs with answers are shared over individual chat for discretion. The lack of grouping chats in Whatsapp by purpose can make this experience quite chaotic. The teachers don’t have the time or the patience to compile the work and check, and they miss out on annotating every answer script.</p>
+                <div class="lgspacer"></div>
+        
+               
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 04</h4>
+                <h2>Building suggestive kits to ensure engagement during tests and reduce chances of cheating.</h2>
+                <div class="quote">“The teachers give us tests and we can extend our time by signing off. We get extra time. With books open and extra time, the students who used to fail are getting full marks!” - Anushka Vashisth, student (XII grade), St. Joseph's Academy</div>
+                </div>
+                <div class="smspacer"></div>
+                <ul>
+                    <li>Teachers should give objective questions only for quick quizzes.</li>
+                    <li>If any student drops out in the duration, they should be tested promptly with a different set of questions.</li>
+                    <li>For tests, students should be given questions that test their analytical skills rather than memory. Objective questions should be tested in a quick quiz or upfront in video conference calls.</li>
+                    <li>Students should be asked to keep their cameras on. If that is not possible, the number of questions should be increased, and students should be marked relatively rather than absolutely.</li>
+                    <li>Later perhaps, with the help of a question database, teachers could know how unique their question sets are.</li>
+                </ul>
+                <div class="lgspacer"></div>
+                
+                
+                <div class="smspacer"></div>
+                <div class="important">
+                <h4>Idea 05</h4>
+                <h2>Building classroom communities</h2>
+                <div class="quote">“I don't get to play with my friends, video calls aren't fun and they don't give us breaks anymore!" - Gauri Gupta, student (I grade), Shemrock Toddlers' Town</div>
+                </div>
+                <div class="smspacer"></div>
+                <p>Although students have Instagram and Snapchat to ensure they don’t miss out on post-period gossip, they are not able to interact with their peers in the classroom. They are restricted to just a part of their school community. This takes a toll on their interest and interpersonal development. Students don’t grow through lessons as much as they do through building relationships.</p>
+                <ul>
+                    <li>Encourage group assignments</li>
+                    <li>Schedule impromptu debates, or singing sessions</li>
+                    <li>Hold a virtual connect session to compensate for the morning assembly time.</li>
+                </ul>
+                <div class="lgspacer"></div>
+                
+                
+ 
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->               
+                
+
+            <div class="lgspacer"></div>
+            <h2>Sketching & Wireframing</h2>
+            <p>During sketching, I was able to explore potential layouts and wireframes for introducing the product to teachers. As I sketched, I determined that there can be an app that functions as a one-stop solution for learning management and communication.</p>
+            <div class="smspacer"></div>
+
+
+            <a data-fancybox="gallery" href="images/elearn/wireframes.png"><img src="images/elearn/wireframes.png" class="imagesize"></a>
+
+            <div class="lgspacer"></div>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+            <h1>Testing & Iterating </h1>
+            
+            <p>Once I explored different ideas, I wanted to test this idea with interviewed teachers. I did some qualitative testing with a few screens to test some variations. I then mocked up screens in Sketch to build my prototype in Invision.</p>
+            
+            <div class="smspacer"></div>
+            
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <div class="smspacer"></div>
+
+             <h2>User Flow</h2>
+                
+                <p>Laying out the user flow <strong>enables me to see the big picture.</strong> As I build a journey map, I like to focus on potential opportunities.</p>
+                
+                <div class="smspacer"></div>
+
+            <a data-fancybox="gallery" href="images/elearn/flow.jpg"><img src="images/elearn/flow.jpg" class="imagesize"></a>
+
+        <div class="lgspacer"></div>                                       
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+                
+        <p></p>
+        <!--a data-fancybox="gallery" href="images/elearn/screens.png"><img src="images/elearn/screens.png" class="imagesize"></a>
+        
+        <div class="lgspacer"></div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        
+       
+        <div class="row">
+
+           
+            <span class="col-md-4">
+                 <p class="toppadding">With Sehpath, teachers have their space to organise their schedule, jot dot top-of-the-head thoughts, and classify their classes as groups.</p>
+            </span>
+            
+            
+            
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="images/elearn/scr1.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+            
+             <span class="col-md-4">        
+                <div class="row justify-content-center">
+               <img src="images/elearn/scr2.png" class="gifsize" style="max-width:250px; height:auto;">
+        </div>
+             
+                
+            </span>
+
+        </div>
+
+        <div class="lgspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+       <div class="row">
+
+   
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr3.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr11.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+           
+           <span class="col-md-4">
+                 <p class="toppadding">They have templates to design various types of assignments on the go. Not just that, they can refer to the assignments shared earlier. This way, they can make sure they are asking the right questions for the occassion.</p>
+            </span>
+            
+           
+        </div>
+
+        <div class="lgspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="row">
+
+           
+            <span class="col-md-4">
+                 <p class="toppadding">With Sehpath, teachers can check the best of their community in action. They can learn and share insights on what works for which stage, and implement suitable methods in their classes.</p>
+            </span>
+            
+            
+            
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr4.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+            
+             <span class="col-md-4">        
+                <div class="row justify-content-center">
+               <img src="/images/elearn/scr9.png" class="gifsize" style="max-width:250px; height:auto;">
+        </div>
+             
+                
+            </span>
+
+        </div>
+        <div class="lgspacer"></div>
+
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <div class="row">
+
+   
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr5.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>   
+            </span>
+      
+      <span class="col-md-4">
+               
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr6.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>      
+            </span>
+           
+           
+      <span class="col-md-4">
+                 <p class="toppadding">Teachers can check in real-time how engaged their students are, and don't need to fret about who is slipping out of the rooms. They can manage to share announcements, assignments and alerts, even! <br>
+                    They can easily track who hasn't submitted the assignment, who has, and if any assignments remain to be corrected- all without losing hair over it.</p>
+            </span>
+            
+           
+        </div>
+
+        <div class="lgspacer"></div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      
+
+<div class="row">
+
+           
+            <span class="col-md-4">
+                 <p class="toppadding">Marking assignments along with e-learning comes with its own sets of problems. Solving for easy clicking and marking digitally can help avoid humongous lists, opening PDFs, checking, writing and typing the feedback, when possible. Easy annotation means better, direct, hassle-free feedback and learning.</p>
+            </span>
+            
+            
+            
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr7.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+            
+             <span class="col-md-4">        
+                <div class="row justify-content-center">
+               <img src="/images/elearn/scr8.png" class="gifsize" style="max-width:250px; height:auto;">
+        </div>
+             
+                
+            </span>
+
+        </div>
+        <div class="lgspacer"></div>
+
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ 
+        
+        <span class="col-md-4">
+        <div class="row justify-content-center">
+        <a href="https://invis.io/CKYAEBKBFRV#/427282404_SCHEDULE" target="_blank" class="button1">VIEW PROTOTYPE ></a>
+        <div class="smspacer"></div>
+        </div>
+        </span>              
+        <div class="lgspacer"></div>
+
+        
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+            
+           <div class="important">
+                <h4>Research Findings:</h4>
+                <p>After making some changes to the design based on testing, I presented my prototypes to the interviewed teachers and got the following responses:</p>
+                <ul>
+                    <div class="quote">“I would be more comfortable using a desktop for marking the papers with a mouse, but this works too.”- Neera Kapoor</div>
+                    <div class="quote">“I usually had big trouble not being able to access my notes in the office. It was tough to compile them all over again.”- Pika Gupta</div>
+                    <div class="quote">“With this, they could send in the assignments, but a majority of our discussions would probably still happen on Whatsapp. Sharing is instant. Also, peer discussions are simpler.”- Anjana Dobhal</div>
+                </ul>
+            </div>
+            <div class="lgspacer"></div-->
+              
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+       <div class="row">
+
+   
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr12.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+
+            <span class="col-md-4">
+                
+                
+                <div class="row justify-content-center">
+            <img src="/images/elearn/scr13.png" class="gifsize" style="max-width:250px; height:auto;">
+
+        </div>
+             
+                
+            </span>
+           
+           <span class="col-md-4">
+                 <p class="toppadding">Based on the feedback, I created a space to manage resources for the teachers. Having book PDFs at hand will make it easier to share the screen during readings (instead of aiming a camera at the book) and copy/paste snippets from books for students to get guidance.</p>
+            </span>
+            
+           
+        </div>
+
+        <div class="lgspacer"></div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="important">
+            <h2>Next Steps & Considerations:</h2>
+            <ul>
+                <li>Creation of discussion forums for collaborative learning and instant feedback.</li>               
+                <li>Annotation is far more convenient on desktop, with advanced functionalities. The mobile app could complement the web.</li>
+                <li>In what way can content creation and innovation be encouraged that appeals to the user base? Can gamification lend itself as a motivation for active digital use?</li>
+                <li>Need to explore methods of measuring teacher performance and insights beyond student scores.</li>               
+            </ul>
+
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="lgspacer"></div>
+        <!--h1>My Successes </h1>
+        <p>After writing up the case study, I sent my work over to a teacher and this is the reply I received:</p>
+        <div class="smspacer"></div>
+        <a data-fancybox="gallery" href="images/foodie/.png"><img src="images/foodie/.png" class="imagesize"></a-->
+
+
+        <div class="smspacer"></div>
+            <!--p>There is a huge potential in the education industry to encourage creative education, and we are just learning how to solve for it.</p-->
+            <!--p>Although the teachers in schools can benefit from learning systems, some sectors are facing too tough a challenge. For exploration and material based education, progress is halted. It is tough to train fashion and textile designers in the current circumstances. </p-->
+        </span>
+    </div>
+    </div>
+ </div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->      
+
+<div class="lgspacer"></div>
+
+    <a href="jiffy.html">
+        <div class="row">
+
+            <div class="importantclick col-md-12">
+                <p>Next Project</p>
+                <h1>Phone Rehab</h1>
+            </div>
+
+
+        </div>
+
+    </a>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="lgspacer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" style="font-size:16px"></i></button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+
+<footer>
+  
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="iconbar">
+
+            <ul>
+                <!--a href="https://medium.com/@anavi.mittal" target="_blank"><i class="fab fa-medium icon"></i></a-->
+                <a href="https://www.behance.net/anavimittal" target="_blank"><i class="fab fa-behance icon"></i></a>
+                <a href="https://www.linkedin.com/in/anavimittal" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                <!--a href="https://dribbble.com/anavi" target="_blank"><i class="fab fa-dribbble icon"></i></a-->
+                <a href="mailto:anavi.mittal.03@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
+            </ul>
+
+
+            <div class="smspacer"></div>
+
+
+        </div>
+        <p class="figcap">&#169; 2021. Created with &#10084;&#65039 by Anavi</p>
+
+    </div>
+
+
+
+
+</footer>
+
+</html>
