@@ -1,2 +1,2 @@
-# anavi.mittal.09.github.io
-Hi, thanks for visiting. This is currently a work in progress.
+# anavi
+Hi, thanks for visiting. This site will be back up soon!
